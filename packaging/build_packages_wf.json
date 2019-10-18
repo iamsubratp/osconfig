@@ -23,8 +23,8 @@
       "Value": "master",
       "Description": "Branch against which agent need to build"
     },
-    "build_id": {
-      "Value": "",
+    "version": {
+      "Value": "00",
       "Description": "build id for this build"
     }
   },
@@ -44,7 +44,7 @@
             "base-repo": "${base_repo}",
             "repo": "${repo}",
             "pull-ref": "${pull_ref}",
-            "build-id": "${build_id}"
+            "version": "${version}"
           },
           "machineType": "n1-standard-2",
           "name": "inst-build-deb",
@@ -64,7 +64,7 @@
             "base-repo": "${base_repo}",
             "repo": "${repo}",
             "pull-ref": "${pull_ref}",
-            "build-id": "${build_id}"
+            "version": "${version}"
           },
           "machineType": "n1-standard-2",
           "name": "inst-build-goo",
@@ -84,7 +84,7 @@
             "base-repo": "${base_repo}",
             "repo": "${repo}",
             "pull-ref": "${pull_ref}",
-            "build-id": "${build_id}"
+            "version": "${version}"
           },
           "machineType": "n1-standard-2",
           "name": "inst-build-el6",
@@ -104,7 +104,7 @@
             "base-repo": "${base_repo}",
             "repo": "${repo}",
             "pull-ref": "${pull_ref}",
-            "build-id": "${build_id}"
+            "version": "${version}"
           },
           "machineType": "n1-standard-2",
           "name": "inst-build-el7",
@@ -124,7 +124,7 @@
             "base-repo": "${base_repo}",
             "repo": "${repo}",
             "pull-ref": "${pull_ref}",
-            "build-id": "${build_id}"
+            "version": "${version}"
           },
           "machineType": "n1-standard-2",
           "name": "inst-build-el8",

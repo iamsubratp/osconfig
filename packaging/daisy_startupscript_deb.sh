@@ -19,7 +19,7 @@ SRC_PATH=$(curl -f -H Metadata-Flavor:Google ${URL}/daisy-sources-path)
 BASE_REPO=$(curl -f -H Metadata-Flavor:Google ${URL}/base-repo)
 REPO=$(curl -f -H Metadata-Flavor:Google ${URL}/repo)
 PULL_REF=$(curl -f -H Metadata-Flavor:Google ${URL}/pull-ref)
-BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/build-id)
+BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/version)
 
 DEBIAN_FRONTEND=noninteractive
 
