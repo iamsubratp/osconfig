@@ -4,8 +4,10 @@
 approvers:
   - adjackura
   - ryanwe
+  - subratp-testing
 reviewers:
   - adjackura
+  - subratp-testing
   - ryanwe    
   - iamsubratp
   - paulseawa
