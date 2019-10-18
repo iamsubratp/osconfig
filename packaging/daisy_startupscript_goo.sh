@@ -23,16 +23,12 @@ BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/build-id)
 
 echo "Started build..."
 
-gsutil cp "${SRC_PATH}/common.sh" ./
-
-. common.sh
-
 apt-get -y update
 apt-get install -y git-core
 
 git_checkout "$BASE_REPO" "$REPO" "$PULL_REF"
 
-./packaging/build_goo.sh
+. ./packaging/build_goo.sh
 gsutil cp google-osconfig-agent*.goo "${GCS_PATH}/"
 
 echo "Package build success: built `echo *.goo|xargs -n1 basename`"
