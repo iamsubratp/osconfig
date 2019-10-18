@@ -19,20 +19,16 @@ SRC_PATH=$(curl -f -H Metadata-Flavor:Google ${URL}/daisy-sources-path)
 BASE_REPO=$(curl -f -H Metadata-Flavor:Google ${URL}/base-repo)
 REPO=$(curl -f -H Metadata-Flavor:Google ${URL}/repo)
 PULL_REF=$(curl -f -H Metadata-Flavor:Google ${URL}/pull-ref)
-BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/build-id)
+BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/version)
 
 echo "Started build..."
-
-gsutil cp "${SRC_PATH}/common.sh" ./
-
-. common.sh
 
 apt-get -y update
 apt-get install -y git-core
 
 git_checkout "$BASE_REPO" "$REPO" "$PULL_REF"
 
-./packaging/build_goo.sh
+. ./packaging/build_goo.sh
 gsutil cp google-osconfig-agent*.goo "${GCS_PATH}/"
 
 echo "Package build success: built `echo *.goo|xargs -n1 basename`"
