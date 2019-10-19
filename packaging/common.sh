@@ -16,7 +16,7 @@
 set -e
 
 export PKGNAME="google-osconfig-agent"
-export VERSION=${version}
+export VERSION=${BUILD_ID}
 echo "Version set to $VERSION"
 
 function exit_error() {
