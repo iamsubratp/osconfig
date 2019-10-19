@@ -13,3 +13,4 @@ try again
 let's do it again
 almost there
 generate_new_version
+generate_new_version
