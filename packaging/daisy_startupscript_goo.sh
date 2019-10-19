@@ -23,6 +23,8 @@ BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/version)
 
 echo "Started build..."
 
+gsutil cp "${SRC_PATH}/common.sh" ./
+
 apt-get -y update
 apt-get install -y git-core
 
