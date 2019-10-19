@@ -23,6 +23,8 @@ BUILD_ID=$(curl -f -H Metadata-Flavor:Google ${URL}/version)
 
 echo "Started build..."
 
+gsutil cp "${SRC_PATH}/common.sh" ./
+
 # Install git2 as this is not available in centos 6/7
 RELEASE_RPM=$(rpm -qf /etc/redhat-release)
 RELEASE=$(rpm -q --qf '%{VERSION}' ${RELEASE_RPM})
