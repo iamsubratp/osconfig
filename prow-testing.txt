@@ -18,3 +18,4 @@ generate_new_version
 generate
 generate_new_version
 generate
+generate_new_version
