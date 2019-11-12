@@ -5,10 +5,12 @@ go 1.12
 require (
 	cloud.google.com/go v0.47.0
 	cloud.google.com/go/storage v1.1.1
+	github.com/GoogleCloudPlatform/compute-image-tools v0.0.0-20191112213948-217228ef4fae
 	github.com/GoogleCloudPlatform/guest-logging-go v0.0.0-20191018162143-d6c1e38c4e8f
 	github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
 	github.com/go-ole/go-ole v1.2.4
 	github.com/golang/protobuf v1.3.2
+	github.com/google/uuid v1.1.1
 	github.com/googleapis/gax-go/v2 v2.0.5
 	github.com/kardianos/service v1.0.0
 	github.com/kylelemons/godebug v1.1.0
