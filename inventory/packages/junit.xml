@@ -1,0 +1,6 @@
+  <testsuite name="" tests="1" failures="0" errors="0" disabled="0" skipped="0" time="22.226137514">
+     <testcase classname="" id="90257787-0513-4ceb-84fb-724c2b543f03" name="ListZypperPatches [projects/suse-cloud/global/images/family/sles-12]" time="1.862379303">
+        <failure type="Failure">step &#34;wait-instance-ListZypperPatches&#34; validation error: missing reference for instance &#34;ListZypperPatches&#34;</failure>
+        <system-out>[ListZypperPatches]: 2019-11-12T15:18:37-08:00 Validating workflow&#xA;[ListZypperPatches]: 2019-11-12T15:18:37-08:00 Validating step &#34;create-disk-ListZypperPatches&#34;&#xA;[ListZypperPatches]: 2019-11-12T15:18:37-08:00 Validating step &#34;ListZypperPatches&#34;&#xA;[ListZypperPatches]: 2019-11-12T15:18:38-08:00 Validating step &#34;wait-instance-ListZypperPatches&#34;&#xA;[ListZypperPatches]: 2019-11-12T15:18:38-08:00 Error validating workflow: step &#34;wait-instance-ListZypperPatches&#34; validation error: missing reference for instance &#34;ListZypperPatches&#34;&#xA;</system-out>
+     </testcase>
+  </testsuite>

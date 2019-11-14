@@ -97,13 +97,13 @@ func ZypperPatchRunner(runner func(cmd *exec.Cmd) ([]byte, error)) ZypperPatchOp
 // RunZypperPatch runs zypper patch.
 func RunZypperPatch(opts ...ZypperPatchOption) error {
 	zOpts := &zypperPatchOpts{
-		runner: defaultRunner,
-		excludes: nil,
+		runner:           defaultRunner,
+		excludes:         nil,
 		exclusivePatches: nil,
-		categories: nil,
-		severities: nil,
-		withOptional: false,
-		withUpdate: false,
+		categories:       nil,
+		severities:       nil,
+		withOptional:     false,
+		withUpdate:       false,
 	}
 
 	for _, opt := range opts {

@@ -42,10 +42,10 @@ func init() {
 }
 
 type zypperListPatchOpts struct {
-	categories []string
-	severities []string
+	categories   []string
+	severities   []string
 	withOptional bool
-	all        bool
+	all          bool
 }
 
 type ZypperListOption func(opts *zypperListPatchOpts)
@@ -192,7 +192,7 @@ func zypperPatches(opts ...ZypperListOption) ([]byte, error) {
 	//  As per zypper's current implementation,
 	// --all is ignored if we have any filters on any other
 	// field.
-	if (zOpts.all || (len(zOpts.severities) + len(zOpts.categories)) <= 0){
+	if zOpts.all || (len(zOpts.severities)+len(zOpts.categories)) <= 0 {
 		args = append(args, "--all")
 	}
 

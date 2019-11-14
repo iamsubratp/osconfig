@@ -105,7 +105,7 @@ func RunYumUpdate(opts ...YumUpdateOption) error {
 		var filteredPkgs []packages.PkgInfo
 		for _, pkg := range pkgs {
 			for i := 0; i < len(yumOpts.exclusivePackages); i++ {
-				if (strings.Compare(yumOpts.exclusivePackages[i], pkg.Name) == 0) {
+				if strings.Compare(yumOpts.exclusivePackages[i], pkg.Name) == 0 {
 					logger.Debugf("Package (%s) selected for update", pkg.Name)
 					filteredPkgs = append(filteredPkgs, pkg)
 				}
